@@ -1,15 +1,21 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .left-container {
     position: relative;
-    width: 25%;
-  }
-  .left-image {
+    width: fill;
+}
+
+.left-image {
+    height: 100vh;
+    display: block;
+    object-fit: cover;
+}
+
+.left-body {
     position: absolute;
-    height: auto;
-    width: 100%;
-  }
-  .left-body {
-    position: absolute;
-    width: 100%;
     background: black;
     opacity: 0.6;
     color: white;
@@ -17,4 +23,7 @@
     text-align: center;
     font-size: 1.2em;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: block;
+    object-fit: cover;
   }
+
