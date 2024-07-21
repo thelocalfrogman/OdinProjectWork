@@ -1,29 +1,52 @@
 html, body {
-  height: 100%;
+  display: flex;
+  height: 100vh;
   margin: 0;
 }
 
+
 .left-container {
-    position: relative;
-    width: fill;
+  width: 400px; /* Set fixed width */
+  position: relative; /* Needed for absolute positioning of text */
 }
 
 .left-image {
-    height: 100vh;
-    display: block;
-    object-fit: cover;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
 }
 
-.left-body {
-    position: absolute;
-    background: black;
-    opacity: 0.6;
-    color: white;
-    top: 8rem;
-    text-align: center;
-    font-size: 1.2em;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    display: block;
-    object-fit: cover;
-  }
+.left-body-text {
+  color: white;
+  text-align: center;
+  font-size: 6em;
+  font-family: NorseBold;
+}
 
+.left-body-container {
+  background: black;
+  opacity: 0.6;
+  top: 20%;
+  width: 100%;
+  position: absolute;
+}
+
+/* Right container for remaining content */
+.right-container {
+  flex: 1; /* Take up remaining space */
+}
+
+/* Remove the float styling from heading */
+h1 {
+  float: none;
+}
+
+@font-face {
+  font-family: NorseBold;
+  src: url(./SignUpAssets/Norse-Bold.otf);
+}
+
+.right-container {
+  margin-left: 10px;
+}
