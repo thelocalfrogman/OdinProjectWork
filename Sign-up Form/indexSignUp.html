@@ -19,16 +19,23 @@
         <h2>You <i>know</i> you want to</h2>
 
         <div class="form-section">
-            <h3>Let's do this!</h3>
-            <form action="/action_page.php">
-                <label for="fname">First name:</label><br>
-                <input type="text" id="fname" name="fname" value="John"><br>
+            <div class="inner-form">
+                <h3>Let's do this!</h3>
+                <form>
+                    <div class="left-form-row">
+                        <label for="fname">First name:</label><br>
+                        <input type="text" id="fname" name="fname" value="John"><br>
 
-                <label for="lname">Last name:</label><br>
-                <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <input style="margin-top: 30px;" class="button" type="submit" value="Submit">
+                    </div>
 
-                <input type="submit" value="Submit">
-              </form> 
+                    <div class="right-form-row">
+                        <label for="lname">Last name:</label><br>
+                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                    </div>
+
+                </form>
+            </div>
         </div>
 
     </div>
