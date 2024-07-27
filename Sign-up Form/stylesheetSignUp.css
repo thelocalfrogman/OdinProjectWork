@@ -19,22 +19,31 @@ html, body {
 }
 
 .odin-image {
-  height: 12%;
   width: 12%;
   display: flex;
   justify-content: center;
 }
 
+.credit {
+  bottom: 0%;
+  color: white;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
 .left-body-text {
   color: white;
-  font-size: 5vw;
+  font-size: 6vw;
   font-family: NorseBold;
 }
 
 .left-body-container {
   background: rgba(0, 0, 0, 0.6); /* Black with 60% opacity */
-  top: 20%;
+  top: 22%;
   width: 100%;
+  height: 150px;
   position: absolute;
   display: flex;
   align-items: center;
@@ -45,7 +54,7 @@ html, body {
 .right-container {
   flex: 1; /* Take up remaining space */
   margin-left: 3%;
-  margin-top: 8%;
+  margin-top: 6.5%;
 }
 
 @font-face {
@@ -54,7 +63,7 @@ html, body {
 }
 
 h1, h2, h3{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
 }
 
 /* Form Styling */
@@ -62,13 +71,18 @@ h1, h2, h3{
 .form-section {
   background-color: white;
   margin-top: 4%;
-  box-shadow: 1px 1px 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 12px 5px 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .inner-form {
   margin-left: 4%;
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+label, p {
+  font-family: Helvetica, sans-serif, Geneva, Tahoma, sans-serif;
+  font-size: 14px;
 }
 
 form {
@@ -78,25 +92,49 @@ form {
 }
 
 .button {
-  width: 30%;
+  width: 20%;
   border-radius: 5px;
   background-color: #596D48;
   border-color: #596D48;
   color: white;
   font-weight: bold;
   font-size: 0.8vw;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-input[type=text] {
+input { /* input[type=text]*/
   width: 80%;
   padding: 12px 20px;
   margin: 8px 0;
   box-sizing: border-box;
-  border: 3px solid #ccc;
-  transition: 0.5s;
+  border: 2px solid #E5E7EB;
+  border-radius: 5px;
+  transition: 0.3s;
   outline: none;
 }
 
-input[type=text]:focus {
-  border: 3px solid #555;
+input:focus {
+  border: 2px solid #0077ff;
+  box-shadow: 0 5px 15px -4px black;
 }
+
+input[type=password]:invalid {
+  border: 2px solid red;
+}
+
+input[type=email]:invalid {
+  border: 2px solid red;
+}
+
+.log-in {
+  font-size: 19px
+}
+
+.inline-link {
+  color: #596D48;
+}
+.inline-link:link { text-decoration: none; }
+.inline-link:visited { text-decoration: none; }
+.inline-link:hover { text-decoration: none; }
+.inline-link:active { text-decoration: none; }

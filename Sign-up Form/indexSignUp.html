@@ -11,11 +11,14 @@
             <img class="odin-image" src="./SignUpAssets/odin-lined.png">
             <p class="left-body-text">ODIN</p>
         </div>
-<!-- <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p> -->
+
+        <div class="credit">
+            <p>Photo by <a href="https://unsplash.com/@haliewestphoto">Halie West</a> on <a href="https://unsplash.com/photos/green-leaf-plant-in-close-up-photography-25xggax4bSA">Unsplash</a></p>
+        </div>
     </div>
 
     <div class="right-container">
-        <h1>Welcome to this not real online service!<br>Please kindly hand over your details for legitimate use.<br>Pinky promise we aren't evil :3</h1>
+        <h1>Welcome to this not real online service!<br>Please kindly hand over your details for legitimate use.<br>Pinky promise we <i>aren't</i> evil :3</h1>
         <h2>You <i>know</i> you want to</h2>
 
         <div class="form-section">
@@ -23,21 +26,34 @@
                 <h3>Let's do this!</h3>
                 <form>
                     <div class="left-form-row">
-                        <label for="fname">First name:</label><br>
-                        <input type="text" id="fname" name="fname" value="John"><br>
+                        <label for="remail">First name</label><br>
+                        <input type="text" id="rname" name="rname" placeholder="Thor"><br>
+
+                        <label for="remail">Email</label><br>
+                        <input type="email" id="remail" name="remail" placeholder="thor@odinson.com"><br>
+
+                        <label for="rpassword">Password</label><br>
+                        <input type="password" id="rpassword" name="rpassword" required><br>
                     </div>
 
                     <div class="right-form-row">
-                        <label for="lname">Last name:</label><br>
-                        <input type="text" id="lname" name="lname" value="Doe"><br><br>
+                        <label for="lname">Last name</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Odinson"><br>
+
+                        <label for="lnumber">Phone Number</label><br>
+                        <input type="tel" id="lnumber" name="lnumber"><br>
+
+                        <label for="lpassword">Confirm Password</label><br>
+                        <input type="password" id="lpassword" name="lpassword" required><br><br>
                     </div>
 
                 </form>
             </div>
         </div>
 
-        <input style="margin-top: 30px;" class="button" type="submit" value="Submit">
+        <input style="margin-top: 30px; border: 0; font-family: Helvetica, sans-serif, Geneva, Tahoma, sans-serif;" class="button" type="submit" value="Create Account">
 
+        <p class="log-in">Already have an account? <a class="inline-link" href="https://www.theodinproject.com"><b>Log in</b></a></p>
     </div>
 
 </body>
