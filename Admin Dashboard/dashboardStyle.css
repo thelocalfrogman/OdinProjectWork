@@ -1,4 +1,4 @@
-
+/* Base layout */
 body {
     margin: 0;
     padding: 0;
@@ -9,7 +9,7 @@ body {
 }
 
 .side-panel {
-    background-color: blue;
+    background-color: #1992D4;
     grid-column: 1 / 2;
     grid-row: 1 / 3;
     display: grid;
@@ -18,7 +18,7 @@ body {
 }
 
 .top-panel {
-    background-color: aquamarine;
+    background-color: #FFFFFF;
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     display: grid;
@@ -27,10 +27,45 @@ body {
 }
 
 .main-panel {
-    background-color: gray;
+    background-color: #E2E8F0;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
     grid-template-columns: 3fr 1fr;
     grid-template-rows: 1fr 1fr;
+    /* Yellow colour for cards: #F0B429 */
+}
+
+/* Text */
+h1, h2, h3, h4, p, label { font-family: Helvetica, sans-serif;}
+
+/* Side bar logo*/
+.side-logo {
+    display: grid;
+    grid-template-columns: 15% 50%;
+    align-items: center;
+    margin-top: 5%;
+    margin-left: 5%;
+    gap: 10px;
+}
+
+.logo-heading {
+    font-size: 1.5vw;
+    color: white;
+    overflow: hidden;
+}
+
+/* Side bar items */
+
+.side-options {
+    display: grid;
+    grid-template-columns: 20% 80% / 10% 10% ;
+    margin-left: 5%;
+    margin-top: 20%;
+    gap: 10px;
+}
+
+.side-icons {
+    height: 2vw;
+    width: 2vw;
 }
