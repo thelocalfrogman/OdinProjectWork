@@ -42,7 +42,7 @@ h1, h2, h3, h4, p, label { font-family: Helvetica, sans-serif;}
 /* Side bar logo*/
 .side-logo {
     display: grid;
-    grid-template-columns: 15% 50%;
+    grid-template-columns: 30% 50%;
     align-items: center;
     margin-top: 5%;
     margin-left: 5%;
