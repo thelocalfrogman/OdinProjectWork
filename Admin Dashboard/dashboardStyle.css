@@ -42,7 +42,7 @@ h1, h2, h3, h4, p, label { font-family: Helvetica, sans-serif;}
 /* Side bar logo*/
 .side-logo {
     display: grid;
-    grid-template-columns: 30% 50%;
+    grid-template-columns: 18% 50%;
     align-items: center;
     margin-top: 5%;
     margin-left: 5%;
@@ -60,16 +60,32 @@ h1, h2, h3, h4, p, label { font-family: Helvetica, sans-serif;}
 .side-options {
     display: grid;
     grid-template-columns: 100% / auto auto auto auto auto auto;
-    margin-left: 5%;
-    margin-top: 30%;
-    gap: 5px;
+    margin-left: 10%;
+    margin-top: 20%;
+    column-gap: 5px;
+    row-gap: 0;
 }
 
 .side-item {
     display: grid;
-    grid-template-columns: 20% 50%;
+    grid-template-columns: 11% 50%;
+    column-gap: 20px;
     align-items: center;
-    text-align: center;
-    font-size: 1vw;
-    border: 1px solid black;
+    text-align: left;
+    font-size: 0.8vw;
+    fill: white;
+    color: #FFFFFF;
+}
+
+.side-item:hover {
+    border-radius: 5px;
+    background-color: #229fe2b7;
+}
+
+/* Top bar items */
+
+.top-options {
+    display: grid;
+    grid-template-columns: 100% / auto auto;
+    column-gap: 5px;
 }
