@@ -210,7 +210,27 @@ h1, h2, h3, h4, p, label { font-family: Helvetica, sans-serif;}
     background-color: white;
     border-radius: 10px;
     border-left: 8px solid #F0B429;
-    padding: 20px;
+    padding-left: 20px;
+    display: grid;
+    grid-template-areas: 
+        "projectTitle"
+        "projectIntro"
+        "projectIcons";
+    grid-template-rows: 20% 40% 52%;
+}
+
+.main-project-item-icons {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: projectIcons;
+    margin-right: 5px;
+}
+
+.main-svg-icon {
+    width: 35px;
+    height: auto;
+    padding-right: 15px;
+    cursor: pointer;
 }
 
     /* Annoucements Panel */ 
