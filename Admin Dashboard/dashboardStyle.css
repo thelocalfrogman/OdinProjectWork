@@ -31,8 +31,6 @@ body {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     display: grid;
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
 }
 
 /* Text */
@@ -42,7 +40,7 @@ hr { /* Black bar */
     display: block;
     height: 1px;
     border: 0;
-    border-top: 1px solid black;
+    border-top: 1px solid rgb(194, 194, 194);
     margin: 1em 0;
     padding: 0;
 }
@@ -186,11 +184,11 @@ hr { /* Black bar */
     cursor: pointer;
 }
 
-/* Main Panel */ /* Yellow colour for cards: #F0B429 */
+/* Main Panel */
 .main-panel {
     display: grid;
     grid-template-areas: 
-        "projects annoucements"
+        "projects announcements"
         "projects trending";
     grid-template-columns: 70% 30%;
     grid-template-rows: 50% 50%;
@@ -211,7 +209,7 @@ hr { /* Black bar */
         "ithree ifour"
         "ifive isix";
     grid-template-columns: 47% 47%;
-    grid-template-rows: 10% 25% 25% 25% 25% 25% 25%;
+    grid-template-rows: 10% 25% 25% 25%;
     column-gap: 20px;
     row-gap: 20px;
 }
@@ -249,34 +247,57 @@ hr { /* Black bar */
     cursor: pointer;
 }
 
+.main-project-card-p {
+    font-size: 17px;
+    grid-area: projectIntro;
+}
+
+.main-project-card-h {
+    font-size: 25px;
+    grid-area: projectTitle;
+}
+
     /* Announcements Panel */ 
-.main-announcemens {
-    grid-area: annoucements;
+.main-announcements {
+    grid-area: announcements;
     display: grid;
+    margin-left: 10px;
+    overflow: hidden;
 }
 
 .main-announcements-panel-layout {
     display: grid;
     grid-template-areas: 
-        "title"
-        "rows"
-        "rows"
-        "rows";
-    grid-template-rows: 10% 15% 15% 15%;
+        "Atitle"
+        "Arows"
+        "Arows"
+        "Arows";
+    grid-template-columns: 80%;
+    grid-template-rows: 15% 25% 25% 25%;
     row-gap: 20px;
 }
 
 .announcement-rows {
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin-right: 60px;
-    padding: 20px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2); 
+}
+
+    /* Side Panel Text Size*/
+.main-side-panel-h {
+    font-size: 15px;
+}
+
+.main-side-panel-p {
+    font-size: 12px;
 }
 
     /* Trending Panel */
 .main-trending {
     grid-area: trending;
     display: grid;
+    margin-left: 10px; 
 }
 
 .main-trending-panel-layout {
@@ -286,13 +307,14 @@ hr { /* Black bar */
         "Trendingrows"
         "Trendingrows"
         "Trendingrows";
-    grid-template-rows: 10% 15% 15% 15%;
-    row-gap: 20px;
+        grid-template-columns: 80%;
+        grid-template-rows: 15% 25% 25% 25%;
+        row-gap: 20px;
 }
 
 .trending-rows {
     background-color: #FFFFFF;
     border-radius: 10px;
-    margin-right: 60px;
-    padding: 20px;
+    padding: 15px;
+    box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2); 
 }
