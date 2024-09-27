@@ -96,18 +96,23 @@ hr { /* Black bar */
 .top-search-bar {
     border-radius: 8px;
     height: 35px;
-    box-shadow: 3px 1px 4px 1px rgba(0, 0, 0, 0.425);
+    box-shadow: 7px /* Depth */ 4px /* up/down angle*/ 5px /* Blur */ 1px /* Padding */ rgba(0, 0, 0, 0.425);
     background-color: #e9e9e92a;
     font-weight: bold;
-    padding: 6px;
+    padding-left: 12px;
     border: none;
     margin-top: 8px;
-    margin-right: 16px;
     font-size: 17px;
+    &:focus{
+        border: 1px solid #1992D4;
+        transition: 0.35s ease;
+        color: #1992D4;
+    }
 }
 
 .top-search-bar:hover {
-    background-color: #e9e9e9bd;
+    box-shadow: 9px 6px 5px 1px rgba(0, 0, 0, 0.2);
+    transition: 0.2s;
 }
 
 
@@ -116,7 +121,7 @@ hr { /* Black bar */
     grid-template-areas: 
         "searchbar rightprofile"
         "profile buttons";
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 60% 50%;
     grid-template-rows: 50% 50%;
     margin-left: 80px;
 }
@@ -132,11 +137,11 @@ hr { /* Black bar */
     .top-right-profile {
         grid-area: rightprofile;
         grid-template-areas: "bell smallIcon name";
-        grid-template-columns: 3% 10% 13%;
+        grid-template-columns: 4.5% 10% 30%;
         display: grid;
-        justify-content: end;
+        justify-content: start;
         align-items: center;
-        margin-right: 50px;
+        margin-left: 200px;
         gap: 30px;
     }
 
@@ -148,17 +153,17 @@ hr { /* Black bar */
     grid-template-areas:
     "a b"
     "a c";
-    grid-template-columns: 12% 90%;
+    grid-template-columns: 12% 40%;
     grid-template-rows: 50% 50%;
-    display: grid;;
+    display: grid;
     align-items: center;
     margin-top: 15px;
 }
 
 .profile-img {
     width: 60px;
-    border: 3px solid yellow;
-    border-radius: 30px;
+    border: 4px solid #ffff00a9;
+    border-radius: 35px;
     grid-area: a;
     display: grid;
 }
@@ -173,10 +178,10 @@ hr { /* Black bar */
 
 .profile-small-text {
     font-weight: bold;
-    font-size: 0.6vw;
+    font-size: 0.8vw;
     grid-area: c;
     display: grid;
-    margin: 0;
+    margin-bottom: 2px;
 }
 
     /* Bottom Button Section */
@@ -185,10 +190,10 @@ hr { /* Black bar */
     grid-template-areas: "new upload share";
     grid-template-columns: 20% 20% 20%;
     display: grid;
-    justify-content: end;
+    justify-content: start;
     align-items: center;
     gap: 20px;
-    margin-right: 50px;
+    margin-left: 100px;
 }
 
 .top-buttons {
@@ -197,10 +202,11 @@ hr { /* Black bar */
     border-color: #1992D4;
     color: #FFFFFF;
     font-weight: bold;
-    font-size: 0.8vw;
+    font-size: 0.95vw;
     width: 100%;
-    height: 50%;
+    height: 40%;
     cursor: pointer;
+    border: 0px;
 }
 
 /* Main Panel */
