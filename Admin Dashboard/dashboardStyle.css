@@ -33,6 +33,57 @@ body {
     display: grid;
 }
 
+/* Mobile Responsiveness - Largely AI Generated. Not to be a respresentation of my abilities */
+/* Pretty broken so far... please fix future me */
+
+@media only screen and (max-width: 768px) {
+    body {
+        display: flex;
+        flex-direction: column; /* Stack elements vertically */
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .side-panel {
+        width: 100%; /* Full width for sidebar */
+        background-color: #1992D4;
+        padding: 15px 0;
+        position: relative; /* Allow natural stacking */
+        margin-bottom: 0; /* Prevent extra spacing at the bottom */
+    }
+
+    .top-options, .main-panel {
+        width: 100%; /* Full width for main content */
+        padding: 10px;
+        margin: 0;
+        box-sizing: border-box; /* Ensure padding doesn’t add to width */
+    }
+
+    .top-options {
+        margin-top: 0; /* Remove extra margin */
+    }
+
+    .main-panel {
+        flex-grow: 1; /* Ensure it takes up remaining space */
+    }
+
+    /* Adjust text sizes for mobile */
+    .logo-heading, .side-item h4, .top-buttons, .profile-main-text {
+        font-size: 14px;
+    }
+
+    .side-item {
+        grid-template-columns: 10% 70%;
+    }
+
+    .top-search-bar {
+        width: 90%;
+    }
+}
+
+
+
+
 /* Text */
 h1, h2, h3, h4, h5, h6, p, label { font-family: Helvetica, sans-serif;}
 
