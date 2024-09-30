@@ -366,12 +366,12 @@ hr { /* Black bar */
 }
 
     /* Side Panel Text Size*/
-.main-side-panel-h {
+.side-panel-h {
     font-size: 14px;
     margin: 0;
 }
 
-.main-side-panel-p {
+.side-panel-p {
     font-size: 12px;
 }
 
@@ -386,12 +386,12 @@ hr { /* Black bar */
     display: grid;
     grid-template-areas: 
         "Trendingtitle"
-        "TrendingTile1"
-        "TrendingTile2"
-        "TrendingTile3"
-        "TrendingTile4";
+        "Trows"
+        "Trows"
+        "Trows"
+        "Trows";
         grid-template-columns: 80%;
-        grid-template-rows: 20% 20% 20% 20% 20%;
+        grid-template-rows: 20% 23% 23% 23%;
         row-gap: 14px;
 }
 
