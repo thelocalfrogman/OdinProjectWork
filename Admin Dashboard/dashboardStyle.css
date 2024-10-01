@@ -186,10 +186,10 @@ hr { /* Black bar */
 
     /* Small Profile / Notifications */
     .top-right-profile {
+        display: grid;
         grid-area: rightprofile;
         grid-template-areas: "bell smallIcon name";
         grid-template-columns: 4.5% 10% 30%;
-        display: grid;
         justify-content: start;
         align-items: center;
         margin-left: 200px;
