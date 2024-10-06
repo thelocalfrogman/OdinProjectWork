@@ -269,6 +269,9 @@ hr { /* Black bar */
         "projects trending";
     grid-template-columns: 70% 30%;
     grid-template-rows: 50% 50%;
+    max-height: 100vh;
+    padding-bottom: 50px;
+    overflow-y: scroll;
 }
 
     /* Projects Panel */
@@ -339,7 +342,9 @@ hr { /* Black bar */
     grid-area: announcements;
     display: grid;
     margin-left: 10px;
-    overflow: hidden;
+    max-height: 100vh;
+    padding-bottom: 20px;
+    overflow-y: scroll; 
 }
 
 .main-announcements-panel-layout {
@@ -381,8 +386,8 @@ hr { /* Black bar */
 .main-trending {
     grid-area: trending;
     display: grid;
-    margin-left: 10px; 
-    overflow: hidden;
+    margin-left: 10px;
+    display: block;
 }
 
 .main-trending-panel-layout {
@@ -394,12 +399,9 @@ hr { /* Black bar */
         "Trows4";
         grid-template-columns: 80%;
         grid-template-rows: 23% 23% 23% 23%;
-        row-gap: 10px;
-
         background-color: #FFFFFF;
         border-radius: 10px;
         box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2); 
-        max-width: 90%;
 }
 
 .trending-row-item {
@@ -409,9 +411,13 @@ hr { /* Black bar */
     "t-image t-desc";
     grid-template-columns: 30% 70%; /* Adjusted columns */
     grid-template-rows: auto auto; /* Allow rows to size automatically */
-    padding: 25px;
+    padding-left: 25px;
     column-gap: 25px;
     align-items: center;
+    row-gap: 0;
+    overflow: hidden;
+    padding-bottom: 5px;
+    padding-top: 5px;
 }
 
 
@@ -421,19 +427,23 @@ hr { /* Black bar */
 }
 
 .trending-image {
-    width: 70px;
+    width: 60px;
     height: auto;
     grid-area: t-image;
     border-radius: 40px;
+    object-fit: cover;
 }
 
 .trending-panel-h {
-    font-size: 14px;
+    font-size: 15px;
     margin: 0;
     grid-area: t-name;
 }
 
 .trending-panel-p {
-    font-size: 12px;
+    font-size: 16px;
     grid-area: t-desc;
+    margin: 0;
+    margin-top: -15px;
+    color: rgb(131, 131, 131);
 }
